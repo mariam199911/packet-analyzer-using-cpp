@@ -29,8 +29,10 @@ int main() {
   // Read file into packets
   string line;
   int packet_numer(0);
+  const int type_start_digit = 40;
+  const int type_digits_number = 4;
   while (getline(input_file, line)) {
-    string type = line.substr(40, 4);
+    string type = line.substr(type_start_digit, type_digits_number);
     // EthernetPacket *packet;
     Packet *packet;
     if (type == "AEFE") {

@@ -20,7 +20,6 @@ void EthernalPacket::write(ofstream &output_file) {
     output_file << "Destination Address: " << destination_address << endl;
     output_file << "Source Address: " << source_address << endl;
     output_file << "Type: " << type << endl;
-    output_file << "Data: " << data << endl;
     output_file << endl;
     output_file << "**************************************************************************************************************************************************************************************************************************************"<<endl;
     output_file << endl;
